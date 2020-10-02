@@ -1,0 +1,83 @@
+body {
+    background: rgb(228, 225, 225);
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.contact {
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 7vh;
+    width: 7vh;
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: teal;
+    text-align: center;
+}
+
+.onglet {
+    color: rgb(37, 36, 36);
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.onglet:hover {
+    color: rgb(228, 225, 225);
+    background-color: rgb(37, 36, 36);
+    text-decoration-line: none;
+}
+
+.onglet:focus {
+    border-bottom-color: rgb(37, 36, 36);
+    border-bottom: 4px solid;
+    background-color: rgb(37, 36, 36);
+    color: rgb(228, 225, 225);
+}
+
+.bloc {
+    background-color: grey;
+    height: 40vh;
+    margin: 5vh;
+    cursor: pointer;
+    color: rgb(228, 225, 225);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.bloc2 {
+    background-color: rgb(228, 225, 225);
+    height: 40vh;
+    margin: 5vh;
+    cursor: pointer;
+    color: rgb(228, 225, 225);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+table {
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    color: rgb(228, 225, 225);
+    font-weight: bold;
+}
+
+.bloc:hover {
+    box-shadow: 0 0 15px black;
+}
+
+footer {
+    background-color: teal;
+    text-align: center;
+} 
