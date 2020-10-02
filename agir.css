@@ -85,6 +85,19 @@ img_responsive {
     margin-left:-10px;
 }
 
+.img-thumbnail{
+padding: 0.25rem;
+background-color:  rgb(228, 225, 225);
+border: 1px solid teal;
+border-radius: 0.25rem;
+max-width: 100%;
+height: auto;
+}
+
+
+
+
+
 
 
 
