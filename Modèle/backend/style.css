@@ -23,6 +23,9 @@ img {
     background-color: teal;
     cursor: pointer;
     z-index: 999;
+    text-align: center;
+    font-size: 5vh;
+    color: crimson;
 }
 
 .profil {
@@ -34,6 +37,9 @@ img {
     background-color: crimson;
     cursor: pointer;
     z-index: 999;
+    text-align: center;
+    font-size: 5vh;
+    color: teal;
 }
 
 header .navbar {
@@ -146,4 +152,14 @@ a:hover {
 
 .title {
     font-weight: bold;
+}
+
+#home.home {
+    color: crimson;
+    font-size: 3vh;
+}
+
+.home {
+    color: rgba(37, 36, 36);
+    font-size: 3vh;
 }
