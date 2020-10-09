@@ -10,3 +10,4 @@
     "EXPOSE 80",
     "CMD sh /usr/src/app/run.sh"
   ]
+}
