@@ -113,7 +113,7 @@ footer .navbar {
     text-align: center;
 }
 
-table {
+.bloc table {
     height: 40vh;
     width: 100%;
     text-align: center;
@@ -125,8 +125,14 @@ table {
 header table {
     color: rgb(29, 28, 28);
     height: 1em;
+    width: 100%;
     font-size: 5em;
     text-align: center;
+    text-shadow: 3px 3px 3px rgb(29, 28, 28);
+    font-weight: bold;
+}
+
+.vision td {
 }
 
 .bloc:hover {

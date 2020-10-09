@@ -1,0 +1,10 @@
+gunicorn
+psycopg2
+postgres
+django
+
+
+
+pip freeze > requirements.txt
+mettre requirement.txt dans le dossier de manage.py
+
