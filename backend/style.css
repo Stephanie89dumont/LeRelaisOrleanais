@@ -16,7 +16,7 @@ img {
 
 #contact {
     top: 0;
-    right: 0;
+    right: 0vh;
     position: fixed;
     height: 5vh;
     width: 5vh;
@@ -30,7 +30,7 @@ img {
 
 #profil {
     top: 5vh;
-    right: 0;
+    right: 0vh;
     position: fixed;
     height: 5vh;
     width: 5vh;
@@ -49,7 +49,6 @@ img {
     height: 5vh;
     width: 25vh;
     background-color: lightgrey;
-    cursor: pointer;
     z-index: 999;
     text-align: center;
     font-size: 3vh;

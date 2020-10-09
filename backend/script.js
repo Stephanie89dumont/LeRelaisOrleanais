@@ -7,7 +7,7 @@ function myOpen(id) {
     }
     var pos = 0;
     var pos2 = -25;
-    var id = setInterval(frame, 5);
+    var id = setInterval(frame, 8);
     function frame() {
         if (pos == 25) {
             clearInterval(id);
@@ -33,7 +33,7 @@ function myClose(id) {
     }
     var pos = 25;
     var pos2 = 0;
-    var id = setInterval(frame, 5);
+    var id = setInterval(frame, 8);
     function frame() {
         if (pos == 0) {
             clearInterval(id);
