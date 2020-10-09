@@ -2,8 +2,8 @@
 <html lang="fr">
 
 <head>
-    <title>Le Relais Orléanais - Nous Soutenir</title>
-    <link rel="icon" href="photos/logo.ico" />
+    <title>Le Relais Orléanais</title>
+    <link rel="icon" href="frontend/photos/logo.ico" />
     <meta charset="utf-8">
     <meta name="viewreport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -15,20 +15,24 @@
 </head>
 
 <body>
-    <div class="contact"><i class="fas fa-phone"></i></div>
-    <div class="profil"><i class="fas fa-user"></i></div>
+    <div id="contact" onmouseover="myOpen(this.id)"><i class="fas fa-phone"></i></div>
+    <div id="bandeau1" onmouseout="myClose(this.id)">02.38.54.91.77</div>
+    <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
+    <a href="Connexion.html">
+        <div id="bandeau2" onmouseout="myClose(this.id)">Mon profil</div>
+    </a>
     <div class="container-fluid">
         <header>
             <div class="row">
-                <div class="col-2 logo">
-                    <a href="../LeRelais.html">
-                        <img src="photos/logo.png">
-                    </a>
-                </div>
-                <div class="col-8">
+                <div class="col-10">
                     <table>
                         <tbody>
                             <tr>
+                                <td>
+                                    <a href="../index.html">
+                                        <img src="photos/logo.png">
+                                    </a>
+                                </td>
                                 <td class="align-middle">Le Relais Orléanais</td>
                             </tr>
                         </tbody>
@@ -36,7 +40,7 @@
                 </div>
             </div>
             <div class="row navbar justify-content-center">
-                <a href="../LeRelais.html" class="col-2 home"><i class="fas fa-home"></i></a>
+                <a href="../index.html" class="col-1 home"><i class="fas fa-home"></i></a>
                 <a href="Pres.html" class="col-2 onglet">Le Relais</a>
                 <a href="Vous.html" class="col-2 onglet">Pour Vous</a>
                 <a href="Agir.html" class="col-2 onglet">Agir avec Nous</a>
@@ -178,17 +182,33 @@
         <footer>
             <div class="row navbar">
                 <div class="col-2">
-                    <div class="link"><a href="#">Mention légale</a></div>
-                    <div class="link"><a href="#">Site WCS student</a></div>
-                    <div class="link"><a href="#">Facebook</a></div>
+                    <div><a href="#">Mention légale</a></div>
+                    <div><a href="https://alexv2204.github.io/projet_1_trombi/">Site WCS student</a></div>
+                    <div><a href="https://www.facebook.com/people/Relais-Orleanais/100011241690268">Facebook</a></div>
                 </div>
                 <div class="col-2 offset-3">
-                    <div class="link"><a href="#">Partenaires</a></div>
+                    <div>Partenaires</div>
+                    <div>
+                        <a href="https://ba45.banquealimentaire.org/"><img class="logo" src="photos/BAL.ico"
+                                name="Banque alimentaire du Loiret"></a>
+                        <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/OM.ico"
+                                name="Orléans Métropole"></a>
+                        <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/MO.ico"
+                                name="Mairie d'Orléans"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.loiret.fr/"><img class="logo" src="photos/Loiret.ico"
+                                name="Département du Loiret"></a>
+                        <a href="https://www.centre-valdeloire.fr/"><img class="logo" src="photos/RCVL.ico"
+                                name="Région Centre Val de Loire"></a>
+                        <a href="https://www.centre-val-de-loire.ars.sante.fr/"><img class="logo" src="photos/ARS.ico"
+                                name="Agence Régionale de Santé"></a>
+                    </div>
                 </div>
                 <div class="col-2 offset-3">
-                    <div class="link"><a href="#">Info Press</a></div>
-                    <div class="link"><a href="#">Contact</a></div>
-                    <div class="link"><a href="#">Location</a></div>
+                    <div><a href="#">Info Press</a></div>
+                    <div><a href="#">Contact</a></div>
+                    <div><a href="#">Location</a></div>
                 </div>
         </footer>
     </div>
@@ -201,5 +221,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../backend/script.js"></script>
 </body>
