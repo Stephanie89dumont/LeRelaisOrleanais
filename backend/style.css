@@ -137,6 +137,10 @@ a {
     color: rgb(29, 28, 28);
 }
 
+a.help {
+    font-size: 10px;
+}
+
 a:hover {
     color: crimson;
     text-decoration-line: none;
@@ -164,7 +168,7 @@ a:hover {
 }
 
 .btn {
-    width: 13vh;
+    width: auto;
 }
 
 .btn-primary {
@@ -199,7 +203,6 @@ a:hover {
     width: 2em;
     margin: 4px 4px 4px 4px;
 }
-
 
 @media (max-width: 1510px) {
     .onglet {
