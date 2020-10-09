@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    <div class="contact"><i class="fas fa-phone"></i></div>
-    <div class="profil"><i class="fas fa-user"></i></div>
+    <div id="contact" onmouseover="myOpen(this.id)"><i class="fas fa-phone"></i></div>
+    <div id="bandeau1" onmouseout="myClose(this.id)">02.38.54.91.77</div>
+    <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
+    <div id="bandeau2" onmouseout="myClose(this.id)">Se connecter</div>
     <div class="container-fluid">
         <header>
             <div class="row">
@@ -108,7 +110,7 @@
                                 name="Banque alimentaire du Loiret"></a>
                         <a href="https://www.orleans-metropole.fr/"><img class="logo" src="frontend/photos/OM.ico"
                                 name="Orléans Métropole"></a>
-                        <a href="https://ba45.banquealimentaire.org/"><img class="logo" src="frontend/photos/MO.ico"
+                        <a href="https://www.orleans-metropole.fr/"><img class="logo" src="frontend/photos/MO.ico"
                                 name="Mairie d'Orléans"></a>
                     </div>
                     <div>
@@ -116,8 +118,8 @@
                                 name="Département du Loiret"></a>
                         <a href="https://www.centre-valdeloire.fr/"><img class="logo" src="frontend/photos/RCVL.ico"
                                 name="Région Centre Val de Loire"></a>
-                        <a href="https://www.ars.sante.fr/"><img class="logo" src="frontend/photos/ARS.ico"
-                                name="Agence Régionale de Santé"></a>
+                        <a href="https://www.centre-val-de-loire.ars.sante.fr/"><img class="logo"
+                                src="frontend/photos/ARS.ico" name="Agence Régionale de Santé"></a>
                     </div>
                 </div>
                 <div class="col-2 offset-3">
@@ -136,5 +138,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="backend/script.js"></script>
 </body>
