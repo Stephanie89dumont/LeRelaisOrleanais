@@ -50,3 +50,20 @@ function myClose(id) {
     }
 }
 
+function reveal(id) {
+    if (document.getElementById(id).className == "far fa-eye-slash") {
+        var x = document.getElementsByClassName("password");
+        document.getElementById(id).className = "far fa-eye";
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].type = "text";
+        }
+    } else {
+        var x = document.getElementsByClassName("password");
+        document.getElementById(id).className = "far fa-eye-slash";
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].type = "password";
+        }
+    }
+}

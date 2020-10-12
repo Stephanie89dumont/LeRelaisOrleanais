@@ -48,10 +48,10 @@
             </div>
         </header>
         <main>
-            <div class="row">
-                <div class="col-1">Inscription</div>
+            <div class="row justify-content-center">
+                <div class="col-2 big-title">Inscription</div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-2">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Prénom">
@@ -63,81 +63,84 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
+            <div class="row justify-content-center">
+                <div class="col-4">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Nom d'utilisateur">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
+            <div class="row justify-content-center">
+                <div class="col-4">
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="E-mail">
                     </div>
                 </div>
             </div>
             <div class="row">
+                <div class="offset-4 col-2">
+                    <div class="form-group">
+                        <input type="password" class="form-control password" placeholder="Mot de passe">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="password" class="form-control password" placeholder="Confirmer">
+                    </div>
+                </div>
                 <form class="form-inline">
-                    <div class="form-group mb-2">
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Mot de passe">
-                        </div>
-                    </div>
-                    <div class="form-group mb-2">
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Confirmer">
-                        </div>
-                    </div>
-                    <div class="form-group mb-2">
-                        <td><i id="eye" class="far fa-eye-slash"></i></td>
+                    <div class="form-group mb-3">
+                        <i id="eye" class="far fa-eye-slash" onclick="reveal(this.id)"></i>
                     </div>
                 </form>
             </div>
-            <div class="row">
-                <a class="help" href="#">
-                    <div class="col-12">Se connecter à un compte existant</div>
-                </a>
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <a class="help" href="#">
+                        <div>Se connecter à un compte existant</div>
+                    </a>
+                </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-2">
                     <button type="submit" class="btn btn-primary my-1">S'inscrire</button>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="row navbar">
-                <div class="col-2">
-                    <div class="link"><a href="#">Mention légale</a></div>
-                    <div class="link"><a href="https://alexv2204.github.io/projet_1_trombi/">Site WCS student</a></div>
-                    <div class="link"><a
-                            href="https://www.facebook.com/people/Relais-Orleanais/100011241690268">Facebook</a></div>
+    </div>
+    </main>
+    <footer>
+        <div class="row navbar" id="mini">
+            <div class="col-2">
+                <div class="link"><a href="#">Mention légale</a></div>
+                <div class="link"><a href="https://alexv2204.github.io/projet_1_trombi/">Site WCS student</a></div>
+                <div class="link"><a
+                        href="https://www.facebook.com/people/Relais-Orleanais/100011241690268">Facebook</a></div>
+            </div>
+            <div class="col-2 offset-3">
+                <div class="link">Partenaires</div>
+                <div>
+                    <a href="https://ba45.banquealimentaire.org/"><img class="logo" src="photos/BAL.ico"
+                            name="Banque alimentaire du Loiret"></a>
+                    <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/OM.ico"
+                            name="Orléans Métropole"></a>
+                    <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/MO.ico"
+                            name="Mairie d'Orléans"></a>
                 </div>
-                <div class="col-2 offset-3">
-                    <div class="link">Partenaires</div>
-                    <div>
-                        <a href="https://ba45.banquealimentaire.org/"><img class="logo" src="photos/BAL.ico"
-                                name="Banque alimentaire du Loiret"></a>
-                        <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/OM.ico"
-                                name="Orléans Métropole"></a>
-                        <a href="https://www.orleans-metropole.fr/"><img class="logo" src="photos/MO.ico"
-                                name="Mairie d'Orléans"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.loiret.fr/"><img class="logo" src="photos/Loiret.ico"
-                                name="Département du Loiret"></a>
-                        <a href="https://www.centre-valdeloire.fr/"><img class="logo" src="photos/RCVL.ico"
-                                name="Région Centre Val de Loire"></a>
-                        <a href="https://www.centre-val-de-loire.ars.sante.fr/"><img class="logo" src="photos/ARS.ico"
-                                name="Agence Régionale de Santé"></a>
-                    </div>
+                <div>
+                    <a href="https://www.loiret.fr/"><img class="logo" src="photos/Loiret.ico"
+                            name="Département du Loiret"></a>
+                    <a href="https://www.centre-valdeloire.fr/"><img class="logo" src="photos/RCVL.ico"
+                            name="Région Centre Val de Loire"></a>
+                    <a href="https://www.centre-val-de-loire.ars.sante.fr/"><img class="logo" src="photos/ARS.ico"
+                            name="Agence Régionale de Santé"></a>
                 </div>
-                <div class="col-2 offset-3">
-                    <div class="link"><a href="#">Info Press</a></div>
-                    <div class="link"><a href="#">Contact</a></div>
-                    <div class="link"><a href="#">Location</a></div>
-                </div>
-        </footer>
+            </div>
+            <div class="col-2 offset-3">
+                <div class="link"><a href="#">Info Press</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+                <div class="link"><a href="#">Location</a></div>
+            </div>
+    </footer>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
