@@ -83,6 +83,12 @@ footer .navbar {
     margin-top: 5vh;
 }
 
+footer #mini.navbar{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
 .onglet {
     color: rgb(37, 36, 36);
     font-weight: bold;
@@ -130,9 +136,6 @@ header table {
     text-align: center;
     text-shadow: 3px 3px 3px rgb(29, 28, 28);
     font-weight: bold;
-}
-
-.vision td {
 }
 
 .bloc:hover {
@@ -194,6 +197,12 @@ a:hover {
     font-weight: bold;
 }
 
+.big-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+
 #home.home {
     color: crimson;
     font-size: 3vh;
@@ -208,6 +217,20 @@ a:hover {
     height: 2em;
     width: 2em;
     margin: 4px 4px 4px 4px;
+}
+
+#eye {
+    cursor: pointer;
+    visibility: visible;
+}
+
+#eye2 {
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.justify-content-center {
+    text-align: center;
 }
 
 @media (max-width: 1510px) {

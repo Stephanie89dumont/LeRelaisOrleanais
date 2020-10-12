@@ -8,8 +8,9 @@ verify_ssl = true
 [packages]
 gunicorn = "*"
 postgres = "*"
-psycopg2 = "*"
 whitenoise = "*"
+pillow = "*"
+django = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
