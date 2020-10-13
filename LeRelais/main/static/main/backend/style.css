@@ -109,7 +109,7 @@ footer #mini.navbar{
 }
 
 .bloc {
-    background-image: url(backend/photos/chat.png);
+    background-image: url(photos/chat.png);
     background-size: cover;
     height: 40vh;
     margin: 5vh;
