@@ -14,32 +14,61 @@ img {
     text-align: center;
 }
 
-.contact {
+#contact {
     top: 0;
-    right: 0;
+    right: 0vh;
     position: fixed;
-    height: 7vh;
-    width: 7vh;
+    height: 5vh;
+    width: 5vh;
     background-color: teal;
     cursor: pointer;
     z-index: 999;
     text-align: center;
-    font-size: 5vh;
+    font-size: 3vh;
     color: crimson;
 }
 
-.profil {
-    top: 7vh;
-    right: 0;
+#profil {
+    top: 5vh;
+    right: 0vh;
     position: fixed;
-    height: 7vh;
-    width: 7vh;
+    height: 5vh;
+    width: 5vh;
     background-color: crimson;
     cursor: pointer;
     z-index: 999;
     text-align: center;
-    font-size: 5vh;
+    font-size: 3vh;
     color: teal;
+}
+
+#bandeau1 {
+    top: 0;
+    right: -25vh;
+    position: fixed;
+    height: 5vh;
+    width: 25vh;
+    background-color: lightgrey;
+    z-index: 999;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: rgba(37, 36, 36);
+}
+
+#bandeau2 {
+    top: 5vh;
+    right: -25vh;
+    position: fixed;
+    height: 5vh;
+    width: 25vh;
+    background-color: lightgrey;
+    cursor: pointer;
+    z-index: 999;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: rgba(37, 36, 36);;
 }
 
 header .navbar {
@@ -52,6 +81,12 @@ footer .navbar {
     background-color: teal;
     text-align: center;
     margin-top: 5vh;
+}
+
+footer #mini.navbar{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
 }
 
 .onglet {
@@ -74,7 +109,7 @@ footer .navbar {
 }
 
 .bloc {
-    background-image: url(../frontend/photos/chat.png);
+    background-image: url(backend/photos/chat.png);
     background-size: cover;
     height: 40vh;
     margin: 5vh;
@@ -84,7 +119,7 @@ footer .navbar {
     text-align: center;
 }
 
-table {
+.bloc table {
     height: 40vh;
     width: 100%;
     text-align: center;
@@ -95,8 +130,12 @@ table {
 
 header table {
     color: rgb(29, 28, 28);
-    height: 15vh;
+    height: 1em;
+    width: 100%;
     font-size: 5em;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(29, 28, 28);
+    font-weight: bold;
 }
 
 .bloc:hover {
@@ -105,6 +144,10 @@ header table {
 
 a {
     color: rgb(29, 28, 28);
+}
+
+a.help {
+    font-size: 10px;
 }
 
 a:hover {
@@ -134,7 +177,7 @@ a:hover {
 }
 
 .btn {
-    width: 13vh;
+    width: auto;
 }
 
 .btn-primary {
@@ -154,6 +197,12 @@ a:hover {
     font-weight: bold;
 }
 
+.big-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+
 #home.home {
     color: crimson;
     font-size: 3vh;
@@ -163,3 +212,47 @@ a:hover {
     color: rgba(37, 36, 36);
     font-size: 3vh;
 }
+
+.logo {
+    height: 2em;
+    width: 2em;
+    margin: 4px 4px 4px 4px;
+}
+
+#eye {
+    cursor: pointer;
+    visibility: visible;
+}
+
+#eye2 {
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.justify-content-center {
+    text-align: center;
+}
+
+@media (max-width: 1510px) {
+    .onglet {
+        color: rgb(37, 36, 36);
+        font-weight: bold;
+        font-size: 2vh;
+    }
+} 
+
+@media (max-width: 1180px) {
+    header table {
+        color: rgb(29, 28, 28);
+        height: 15vh;
+        font-size: 4em;
+    }
+} 
+
+@media (max-width: 990px) {
+    header table {
+        color: rgb(29, 28, 28);
+        height: 15vh;
+        font-size: 3em;
+    }
+} 

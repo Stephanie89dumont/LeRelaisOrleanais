@@ -1,8 +1,15 @@
-{% extends 'pourvous/base.html' %}
+{% extends 'main/base.html' %}
 
 
 {% block content %}
-
+<div class="row navbar justify-content-center">
+    <a href="{% url 'main:index' %}" class="col-1 home"><i class="fas fa-home"></i></a>
+    <a id="home" href="{% url 'main:Pres' %}" class="col-2 onglet">Le Relais</a>
+    <a href="{% url 'main:Vous' %}" class="col-2 onglet">Pour Vous</a>
+    <a href="{% url 'main:Agir' %}" class="col-2 onglet">Agir avec Nous</a>
+    <a href="{% url 'main:Soutenir' %}" class="col-2 onglet">Nous Soutenir</a>
+</div>
+</header>
 <main>
     <div class="row bloc1">
         <div class="col-8 article justify">
@@ -28,14 +35,14 @@
         </div>
         <div class="col-4 article">
             <div>
-                <img src="{% static 'pourvous/frontend/photos/chat.png' %}">
+                <img src="{% static 'main/backend/photos/chat.png' %}">
             </div>
         </div>
     </div>
     <div class="row bloc2">
         <div class="col-4 article">
             <div>
-                <img src="../static/pourvous/frontend/photos/chat.png">
+                <img src="{% static 'main/backend/photos/chat.png' %}">
             </div>
         </div>
         <div class="col-8 article justify">
@@ -82,14 +89,14 @@
         </div>
         <div class="col-4 article">
             <div>
-                <img src="../static/pourvous/frontend/photos/chat.png">
+                <img src="{% static 'main/backend/photos/chat.png' %}">
             </div>
         </div>
     </div>
     <div class="row bloc2">
         <div class="col-4 article">
             <div>
-                <img src="../static/pourvous/frontend/photos/chat.png">
+                <img src="{% static 'main/backend/photos/chat.png' %}">
             </div>
         </div>
         <div class="col-8 article justify">
@@ -114,5 +121,4 @@
         </div>
     </div>
 </main>
-
 {% endblock %}

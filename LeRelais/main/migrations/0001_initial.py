@@ -55,9 +55,4 @@ class Migration(migrations.Migration):
                 ('utilisateur', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='pourvous.utilisateur')),
             ],
         ),
-        migrations.AddField(
-            model_name='benevole',
-            name='utilisateur',
-            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='pourvous.utilisateur'),
-        ),
     ]
