@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM library/python:3.6.3-alpine",
-    "RUN apk update && apk upgrade && apk add --no-cache make g++ bash git openssh postgresql-dev curl",
+    "RUN apk update && apk upgrade && apk add --no-cache make g++ bash git openssh postgresql-dev curl jpeg-dev zlib-dev libjpeg",
     "RUN mkdir -p /usr/src/app",
     "WORKDIR /usr/src/app",
     "COPY ./LeRelais/ /usr/src/app",
