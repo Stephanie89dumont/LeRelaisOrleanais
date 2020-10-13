@@ -1,5 +1,5 @@
 """
-WSGI config for LeRelais project.
+WSGI config for LeRelaisO project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

@@ -1,5 +1,5 @@
 """
-ASGI config for LeRelais project.
+ASGI config for LeRelaisO project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

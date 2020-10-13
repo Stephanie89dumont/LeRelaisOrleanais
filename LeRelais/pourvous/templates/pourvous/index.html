@@ -1,0 +1,56 @@
+{% extends 'pourvous/base.html' %}
+
+
+{% block content %}
+<main>
+    <div class="row justify-content-center">
+        <div class="col-4 bloc">
+            <a href="{% url 'pourvous:Pres' %}">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">LE RELAIS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div class="col-4 bloc">
+            <a href="{% url 'pourvous:Vous' %}">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">POUR VOUS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4 bloc">
+            <a href="{% url 'pourvous:Agir' %}">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">AGIR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div class="col-4 bloc">
+            <a href="{% url 'pourvous:Soutenir' %}">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">SOUTENIR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
