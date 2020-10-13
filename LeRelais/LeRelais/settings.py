@@ -96,4 +96,3 @@ if os.environ.get("PRODUCTION") is None:
     from .settings_dev import *
 else:
     from .settings_caprover import *
-
