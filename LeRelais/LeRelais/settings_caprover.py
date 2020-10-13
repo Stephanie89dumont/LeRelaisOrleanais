@@ -1,5 +1,3 @@
-"""caprover specific django settings"""
-​
 import os
 from .settings import BASE_DIR
 # key and debugging settings should not changed without care
