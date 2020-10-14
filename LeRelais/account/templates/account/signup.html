@@ -1,0 +1,52 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+<section class="page-section result">
+    <div class="container">
+        <div class="row text-center justify-content-center align-items-center">
+            <div class="col-auto rounded shadow bg-primary text-white" >
+                <h1>Création de compte</h1>
+            </div>
+        </div>
+    </div>
+</section>
+{% if form %}
+<section class="page-section bg-secondary p-4">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-white">
+                <h4 style="color:#345A61"><strong>Hey ! inscrit toi !</strong></h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section bg-secondary p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form class="text-white bg-moules p-3 rounded shadow" action="{% url 'account:sign_up'%}" method="post">
+                    {% csrf_token %}
+                    <table>{{ form.as_table }}</table>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-secondary text-right">Inscription</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6" >
+                <img src="{% static 'main/backend/photo/logo.jpg' %}" class="rounded img-fluid shadow" alt=""/>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="page-section bg-primary">
+    <div class="container">
+        <div class="row text-center justify-content-center align-items-center">
+            <div class="col-12">
+                <h4 class="text-white"><strong>Youpi {{username}}, ton compte a été créé, tu peux maintenant te connecter </strong></h4>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock content %}

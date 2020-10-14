@@ -17,6 +17,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 INSTALLED_APPS = [
+    "account.apps.AccountConfig",
     "main.apps.MainConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -93,6 +94,10 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+AUTH_USER_MODEL = 'account.Utilisateur'
+
+LOGIN_URL = 'account:sign_up'
 
 if os.environ.get("PRODUCTION") is None:
     from .settings_dev import *

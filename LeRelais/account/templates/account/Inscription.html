@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+
+
+{% block content %}
+
+<main>
+    <form action="{% url 'account:inscription'%}" method="post">
+    {% csrf_token %}
+    <div class="row justify-content-center">
+        <div class="col-2 big-title">Inscription</div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group">
+                {{ form.username }}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group">
+                {{ form.first_name }}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group">
+                {{ form.last_name }}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group">
+                {{ form.email }}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group">
+                {{ form.password }}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <div class="form-group mb-3">
+                <i id="eye" class="far fa-eye-slash" onclick="reveal(this.id)"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+
+
+</main>
+
+{% endblock %}
