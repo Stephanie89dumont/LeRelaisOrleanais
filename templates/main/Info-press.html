@@ -1,0 +1,212 @@
+{% extends 'main/base.html' %} {% block content %}
+<div class="row navbar justify-content-center">
+    <a href="{% url 'main:index' %}" class="col-1 home"><i class="fas fa-home"></i></a>
+    <a href="{% url 'main:Pres' %}" class="col-2 onglet">Le Relais</a>
+    <a href="{% url 'main:Vous' %}" class="col-2 onglet">Pour Vous</a>
+    <a id="home" href="{% url 'main:Agir' %}" class="col-2 onglet">Agir avec Nous</a>
+    <a href="{% url 'main:Soutenir' %}" class="col-2 onglet">Nous Soutenir</a>
+</div>
+</header>
+<main>
+    <div class="row justify-content-center">
+        <div id="d1">
+
+            <h1>découvrez nos publications</h1>
+            <img src="../../static/main/backend/Info_press/publication/Fichier-1.png">
+
+            <div id="p1">
+                <div class="row justify-content-center">
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-23-mai-2019.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-23-mai-2019-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3>mai 2019</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-24-juillet-2019.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-24-juillet-2019-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3>juillet 2019</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-25-sept-2019.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-25-sept-2019-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3> sept 2019</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-26-nov-2019.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-26-nov-2019-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3>nov 2019</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-27-janvier-2020.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-27-janvier-2020-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3> janv 2020</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-28-mars-2020.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/28_mars_2020.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3> mars 2020</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <a href="../../static/main/backend/Info_press/publication/journal-n-29-juin-2020.pdf" target=_blank>
+                                    <img src="../../static/main/backend/Info_press/publication/miniature/journal-n-29-juin-2020-pdf.jpg">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h3> juin 2020</h3>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <div class="row justify-content-center">
+            <div class="row">
+                <h1>on parle de nous</h1>
+                <h6></h6>
+                <h6></h6>
+                <h6></h6>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 press1">
+                <a href="../../static/main/backend/Info_press/RC-09_2019.pdf" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+
+                                <td class="align-middle">Leur redonner l'envie par un repas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+            <div class="col-2 press1">
+                <a href="../../static/main/backend/Info_press/Sakado.jpg" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">SAKADO contre la pauvreté</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+            <div class="col-2 press1">
+                <a href="../../static/main/backend/Info_press/RC_20200328.jpg" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">vigilants pour les besoins essentiels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+            <div class="col-2 press1">
+                <a href="https://www.larep.fr/orleans-45000/actualites/le-chantier-s-installe-sur-le-terrain-du-sanitas-a-orleans_13834501/" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">chantier sur le terrain du sanitas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 press2">
+                <a href="../../static/main/backend/Info_press/Tribune-Hebdo-12-nov-19.pdf" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">le collectif sanitas mobilisé</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+            <div class="col-2 press2">
+                <a href="https://www.tribune-hebdo.fr/orleans/portrait/etienne-delecrin-relais-entier" target=_blank>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">Etienne Delécrin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="row">
+                <h1> consultez notre rapport d'activié</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <ul>
+                <a href="../../static/main/backend/Info_press/Rapport_dactivités/Rapport-activite-2018.pdf" target=_blank>
+                    <img class="align-middle" src="../../static/main/backend/Info_press/Rapport_dactivités/miniature/Vignette-rapport-activite-2018.jpg">
+                </a>
+            </ul>
+        </div>
+    </div>
+</main>
+
+
+{% endblock %}
