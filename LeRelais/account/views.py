@@ -8,58 +8,50 @@ from django.contrib.auth.decorators import login_required
 
 def inscription(request):
     """Display the sign up form."""
-    if request.method == 'POST':
+    if request.method == "POST":
         form = Signup(request.POST)
         if form.is_valid():
-            username = form.cleaned_data['username']
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
+            username = form.cleaned_data["username"]
+            email = form.cleaned_data["email"]
+            password = form.cleaned_data["password"]
             user = Utilisateur.objects.create_user(username, email, password)
-            #user.admin = True
-            user.last_name = form.cleaned_data['last_name']
-            user.first_name = form.cleaned_data['first_name']
+            # user.admin = True
+            user.last_name = form.cleaned_data["last_name"]
+            user.first_name = form.cleaned_data["first_name"]
             user.save()
 
-            context = {
-                "username": username,
-                "new_user": "Tu es maintenant inscrit, connecte toi"
-                            }
-            return render(request, 'account/Connexion.html', context)
+            return redirect("account:connexion")
 
     else:
-        return render(request, 'account/Inscription.html', {'form': Signup()})
+        return render(request, "account/Inscription.html", {"form": Signup()})
 
 
 def connexion(request):
     """Display the sign in form."""
-    if request.method == 'POST':
+    if request.method == "POST":
         form = Signin(request.POST)
         if form.is_valid():
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password']
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('/')
+                return redirect("/")
             else:
-                return render(
-                    request,
-                    'account/Connexion.html',
-                    {'form': Signin()}
-                    )
+                return render(request, "account/Connexion.html", {"form": Signin()})
     else:
-        return render(request, 'account/Connexion.html', {'form': Signin()})
+        return render(request, "account/Connexion.html", {"form": Signin()})
 
 
 @login_required
 def sign_out(request):
     """Allow the user to disconnect."""
     logout(request)
-    return redirect('/')
+    return redirect("/")
 
 
 @login_required
 def my_account(request):
     """Allow the user to view their account information."""
     user = Utilisateur.objects.get(id=request.user.id)
-    return render(request, 'account/my_account.html', {'account': user})
+    return render(request, "account/my_account.html", {"account": user})

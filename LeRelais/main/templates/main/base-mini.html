@@ -21,10 +21,17 @@
 <body>
     <div id="contact" onmouseover="myOpen(this.id)"><i class="fas fa-phone"></i></div>
     <div id="bandeau1" onmouseout="myClose(this.id)">02.38.54.91.77</div>
+    {% if user.is_authenticated %}
     <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
-    <a href="{% url 'main:Connexion' %}">
+    <a href="{% url 'account:my_account' %}">
         <div id="bandeau2" onmouseout="myClose(this.id)">Mon profil</div>
     </a>
+    {% else %}
+    <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
+    <a href="{% url 'account:connexion' %}">
+        <div id="bandeau2" onmouseout="myClose(this.id)">Se connecter</div>
+    </a>
+    {% endif %}
     <div class="container-fluid">
         <header>
             <div class="row">
@@ -33,9 +40,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="{% url 'main:index' %}">
-                                        <img src="{% static 'main/backend/photos/logo.png' %}">
-                                    </a>
+                                    <img src="{% static 'main/backend/photos/logo.png' %}">
                                 </td>
                                 <td class="align-middle">Le Relais Orléanais</td>
                             </tr>
