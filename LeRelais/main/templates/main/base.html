@@ -26,6 +26,11 @@
     <a href="{% url 'account:my_account' %}">
         <div id="bandeau2" onmouseout="myClose(this.id)">Mon profil</div>
     </a>
+    {% elif user.administrateur %}
+    <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
+    <a href="{% url 'account:admin' %}">
+        <div id="bandeau2" onmouseout="myClose(this.id)">Administration</div>
+    </a>
     {% else %}
     <div id="profil" onmouseover="myOpen(this.id)"><i class=" fas fa-user"></i></div>
     <a href="{% url 'account:connexion' %}">
@@ -52,9 +57,7 @@
             <footer>
                 <div class="row navbar">
                     <div class="col-2">
-                        <div class="link"><a href="#">Mention légale</a></div>
-                        <!-- <div class="link"><a href="https://alexv2204.github.io/projet_1_trombi/">Site WCS student</a> -->
-                        <!-- </div> -->
+                        <div class="link"><a href="{% url 'main:Mention' %}">Mention légale</a></div>
                         <div class="link"><a href="https://www.facebook.com/people/Relais-Orleanais/100011241690268">
                                 Facebook</a></div>
                     </div>
@@ -82,9 +85,9 @@
                         </div>
                     </div>
                     <div class="col-2 offset-3">
-                        <div class="link"><a href="#">Info Press</a></div>
-                        <div class="link"><a href="#">Contact</a></div>
-                        <div class="link"><a href="#">Location</a></div>
+                        <div class="link"><a href="{% url 'main:Info' %}">Info Press</a></div>
+                        <div class="link"><a href="{% url 'main:Contact' %}">Contact</a></div>
+                        <div class="link"><a href="{% url 'main:Location' %}">Location</a></div>
                     </div>
             </footer>
     </div>

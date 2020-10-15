@@ -6,7 +6,7 @@
     <a href="{% url 'main:index' %}" class="col-1 home"><i class="fas fa-home"></i></a>
     <a href="{% url 'main:Pres' %}" class="col-2 onglet">Le Relais</a>
     <a href="{% url 'main:Vous' %}" class="col-2 onglet">Pour Vous</a>
-    <a id="home" href="{% url 'main:Agir' %}" class="col-2 onglet">Agir avec Nous</a>
+    <a id="focus" href="{% url 'main:Agir' %}" class="col-2 onglet">Agir avec Nous</a>
     <a href="{% url 'main:Soutenir' %}" class="col-2 onglet">Nous Soutenir</a>
 </div>
 </header>
@@ -119,11 +119,14 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated %}
+    {% else %}
     <div class="row justify-content-center">
         <div class="col-1">
             <a class="btn btn-primary" href="{% url 'account:inscription' %}" role="button">S'INSCRIRE</a>
         </div>
     </div>
+    {% endif %}
 </main>
 
 

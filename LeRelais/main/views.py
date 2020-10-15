@@ -29,3 +29,23 @@ def Connexion(request):
 
 def Inscription(request):
     return render(request, "main/Inscription.html")
+
+
+def Donation(request):
+    return render(request, "main/Donation.html")
+
+
+def Mention(request):
+    return render(request, "main/Mention.html")
+
+
+def Contact(request):
+    return render(request, "main/Contact.html")
+
+
+def Location(request):
+    return render(request, "main/Location.html")
+
+
+def Info(request):
+    return render(request, "main/Info.html")
