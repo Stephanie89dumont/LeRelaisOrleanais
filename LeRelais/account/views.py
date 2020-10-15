@@ -10,6 +10,7 @@ def inscription(request):
     """Display the sign up form."""
     if request.method == "POST":
         form = Signup(request.POST)
+        # return redirect()
         if form.is_valid():
             username = form.cleaned_data["username"]
             email = form.cleaned_data["email"]
@@ -51,6 +52,7 @@ def sign_out(request):
 
 
 @login_required
+# dans la vue if request.user.admin else redirect
 def my_account(request):
     """Allow the user to view their account information."""
     user = Utilisateur.objects.get(id=request.user.id)
