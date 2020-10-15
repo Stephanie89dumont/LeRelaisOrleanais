@@ -13,6 +13,6 @@ urlpatterns = [
     path("Vous", views.Vous, name="Vous"),
     path("Agir", views.Agir, name="Agir"),
     path("Soutenir", views.Soutenir, name="Soutenir"),
-    path("Connexion", views.Connexion, name="Connexion"),
+    #path("Connexion", views.Connexion, name="Connexion"),
     #path("Inscription", views.Inscription, name="Inscription"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

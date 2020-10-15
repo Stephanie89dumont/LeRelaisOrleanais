@@ -10,6 +10,7 @@ def inscription(request):
     """Display the sign up form."""
     if request.method == 'POST':
         form = Signup(request.POST)
+        #return redirect()
         if form.is_valid():
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
@@ -20,11 +21,8 @@ def inscription(request):
             user.first_name = form.cleaned_data['first_name']
             user.save()
 
-            context = {
-                "username": username,
-                "new_user": "Tu es maintenant inscrit, connecte toi"
-                            }
-            return render(request, 'account/Connexion.html', context)
+    
+            return redirect('account:connexion')
 
     else:
         return render(request, 'account/Inscription.html', {'form': Signup()})
@@ -55,10 +53,11 @@ def connexion(request):
 def sign_out(request):
     """Allow the user to disconnect."""
     logout(request)
-    return redirect('/')
+    return redirect('')
 
 
 @login_required
+# dans la vue if request.user.admin else redirect
 def my_account(request):
     """Allow the user to view their account information."""
     user = Utilisateur.objects.get(id=request.user.id)

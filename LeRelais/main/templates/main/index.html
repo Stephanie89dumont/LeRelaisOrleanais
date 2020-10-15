@@ -11,6 +11,15 @@
 </div>
 </header>
 <main>
+    {% if user.administrateur %}
+    <p> administrer les comptes </p>
+    {% endif %}
+    {% if user.is_authenticated %}
+    <p> mon compte </p>
+    {% else%}
+    <p> s'inscrire </p>
+    <p> se connecter </p>
+    {% endif %}
     <div class="row justify-content-center">
         <div class="col-4 bloc">
             <a href="{% url 'main:Pres' %}">
