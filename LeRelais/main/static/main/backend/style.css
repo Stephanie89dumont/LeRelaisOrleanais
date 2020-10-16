@@ -84,7 +84,7 @@ footer .navbar {
 }
 
 footer #mini.navbar{
-    bottom: 0;
+    bottom: auto;
     width: 100%;
     position: absolute;
 }
@@ -347,14 +347,14 @@ a:hover {
 
 .card{
     border-radius: 4px;
-    background: #fff;
+    background: rgb(199, 201, 203);
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     padding: 14px 80px 18px 36px;
     margin: 0 auto; 
     float: none; 
     margin-bottom: 10px;
-    /* background-image: url(photos/don.jpg); */
+    background-image: url(photos/don2.jpg);
 }
 
 .card2{
@@ -366,9 +366,9 @@ a:hover {
     margin: 0 auto; 
     float: none; 
     margin-bottom: 10px;
-    background-image: url(photos/don.jpg);
+    background-image: url(photos/don2.jpg);
     /* opacity: 0.5; */
-} */
+}
 
 .card:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -378,6 +378,14 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
+.trait {
+    border-bottom: 1px dashed teal;
+    margin-bottom: 3vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
 
 
 @media (max-width: 1510px) {
@@ -404,8 +412,8 @@ a:hover {
     }
 } 
 
-@media (max-height: 720px) {
+@media (min-height: 900px) {
     footer #mini.navbar{
-        bottom: auto;
+        bottom: 0;
     }
 }

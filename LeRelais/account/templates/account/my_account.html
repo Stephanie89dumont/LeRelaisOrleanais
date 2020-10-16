@@ -1,50 +1,90 @@
 {% extends "main/base-user.html" %}
 {% block content %}
-<section class="page-section result">
-    <div class="container">
-        <div class="row text-center justify-content-center align-items-center">
-            <div class="col-auto rounded shadow bg-primary text-white">
-                <h1>{{user.first_name}}</h1>
+
+<!-- <div class="container">
+    <div class="row text-center justify-content-center align-items-center">
+        <div class="col-auto bg-primary text-white">
+            <h1>{{user.first_name}}</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="container rounded shadow p-3 text-white">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <h3>Votre Adresse email:</h3>
+            </div>
+            <div class="col-lg-6">
+                <h3>{{ user.email }}</h3>
+            </div>
+        </div>
+        <hr class="divider my-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <h3>Votre Nom:</h3>
+            </div>
+            <div class="col-lg-6">
+                <h3>{{ user.last_name }}</h3>
+            </div>
+        </div>
+        <hr class="divider my-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <h3>Votre Prenom:</h3>
+            </div>
+            <div class="col-lg-6">
+                <h3>{{ user.first_name }}</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-1">
+                <a class="btn btn-primary" href="{% url 'account:sign_out' %}" role="button">Se déconnecter</a>
             </div>
         </div>
     </div>
-</section>
-<section class="page-section bg-secondary">
-    <div class="container">
-        <div class="container bg-moules rounded shadow p-3 text-white">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <h3>Votre Adresse email:</h3>
-                </div>
-                <div class="col-lg-6">
-                    <h3>{{ user.email }}</h3>
-                </div>
-            </div>
-            <hr class="divider my-4">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <h3>Votre Nom:</h3>
-                </div>
-                <div class="col-lg-6">
-                    <h3>{{ user.last_name }}</h3>
-                </div>
-            </div>
-            <hr class="divider my-4">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <h3>Votre Prenom:</h3>
-                </div>
-                <div class="col-lg-6">
-                    <h3>{{ user.first_name }}</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-1">
-                    <a class="btn btn-primary" href="{% url 'account:sign_out' %}" role="button">Se déconnecter</a>
-                </div>
-            </div>
+</div> -->
+
+<div class="container-fluid contact">
+    <div class="row justify-content-center trait"></br></br>
+        <div class="big-title">{{user.first_name}}</div>
+    </div>
+    <div class="row justify-content-center trait"><br></br>
+        <div class="col-5">
+            <div>Votre Nom:</div>
+        </div>
+        <div class="col-5">
+            <div>{{ user.last_name }}</div>
         </div>
     </div>
+    <div class="row justify-content-center trait"></br></br>
+        <div class="col-5">
+            <div>Votre Prenom:</div>
+        </div>
+        <div class="col-5">
+            <div>{{ user.first_name }}</div>
+        </div>
+    </div>
+    <div class="row justify-content-center"><br></br>
+        <div class="col-5">
+            <div>Votre Adresse email:</div>
+        </div>
+        <div class="col-5">
+            <div>{{ user.email }}</div>
+        </div>
+    </div>
+    <div class="row justify-content-center"><br></br>
+        <div class="col-3">
+            <a class="btn btn-primary" href="{% url 'account:sign_out' %}" role="button">Modifier</a>
+        </div>
+        <div class="col-3">
+            <a class="btn btn-primary" href="{% url 'account:sign_out' %}" role="button">Se déconnecter</a>
+        </div>
+    </div>
+    <div class="row justify-content-center"><br></br>
+    </div>
+</div>
 </section>
 
 {% endblock content %}
