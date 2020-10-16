@@ -5,7 +5,7 @@ import os
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        if Utilisateur.objects.count() < 10:
+        if Utilisateur.objects.count() == 0:
             # -----cette partie n'est pas à modifier
             # username = 'admin'
             # email = 'admin@admin.com'
