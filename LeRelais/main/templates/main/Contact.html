@@ -1,0 +1,31 @@
+{% extends 'main/base-mini.html' %}
+
+
+{% block content %}
+
+<div class="container-fluid contact">
+    <div class="row justify-content-center">
+        <div class="big-title">Contact</div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <div class="big-title com" onclick="trigger()"><i class=" fas fa-phone">
+                </i></div>
+        </div>
+        <div class="col-5">
+            <a href="mailto:le-relais-orleanais@fakemail.fr">
+                <div class="big-title com"><i class="fas fa-envelope"></i></div>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <div>Appelez-nous</div>
+        </div>
+        <div class="col-5">
+            <div>Écrivez-nous</div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

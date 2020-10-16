@@ -60,11 +60,14 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated %}
+    {% else %}
     <div class="row justify-content-center">
         <div class="col-1">
             <a class="btn btn-primary" href="{% url 'account:inscription' %}" role="button">S'INSCRIRE</a>
         </div>
     </div>
+    {% endif %}
 </main>
 
 

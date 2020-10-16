@@ -36,12 +36,20 @@ def connexion(request):
             password = form.cleaned_data["password"]
             user = authenticate(request, username=username, password=password)
             if user is not None:
-                login(request, user)
-                return redirect("/")
+                if user.administrateur == True:
+                    login(request, user)
+                    return redirect("account:admin")
+                else:
+                    login(request, user)
+                    return redirect("account:my_account")
             else:
-                return render(request, "account/Connexion.html", {"form": Signin()})
+                return redirect("account:connexion_failed")
     else:
         return render(request, "account/Connexion.html", {"form": Signin()})
+
+
+def connexion_failed(request):
+    return render(request, "account/Connexion_failed.html", {"form": Signin()})
 
 
 @login_required
@@ -56,4 +64,9 @@ def sign_out(request):
 def profil(request):
     """Allow the user to view their account information."""
     user = Utilisateur.objects.get(id=request.user.id)
-    return render(request, "account/Profil.html", {"account": user})
+    return render(request, "account/my_account.html", {"account": user})
+
+
+def admin(request):
+    admin = Utilisateur.objects.get(id=request.user.id)
+    return render(request, "account/admin.html", {"account": admin})

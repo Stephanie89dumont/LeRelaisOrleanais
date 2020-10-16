@@ -109,7 +109,6 @@ footer #mini.navbar{
 }
 
 .bloc {
-    background-color: teal;
     background-size: cover;
     height: 40vh;
     margin: 5vh;
@@ -139,6 +138,35 @@ footer #mini.navbar{
     color: rgb(228, 225, 225);
     text-shadow: 3px 3px 3px rgb(29, 28, 28);
     font-weight: bold;
+}
+
+.cadre {
+    height: auto;
+    width: 60vh;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgb(29, 28, 28);
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.mention {
+    height: auto;
+    width: auto;
+    text-align: center;
+    box-shadow: 3px 3px 3px 2px rgba(220, 20, 60, 0.699);
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    background-color: rgb(238, 237, 237);
+}
+
+.contact {
+    height: auto;
+    width: 80vh;
+    text-align: center;
+    box-shadow: 3px 3px 3px 2px rgba(220, 20, 60, 0.699);
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    background-color: rgb(238, 237, 237);
 }
 
 header table {
@@ -208,12 +236,25 @@ a:hover {
 
 .title {
     font-weight: bold;
+    color: rgb(29, 28, 28);
+}
+
+#loc.title {
+    color: crimson;
+    text-decoration-line: underline; 
 }
 
 .big-title {
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 3vh;
+    color: rgb(29, 28, 28);
+}
+
+#mention.big-title {
+    color: teal;
+    font-size: 4vh;
+    text-shadow: none;
 }
 
 #home.home {
@@ -235,15 +276,72 @@ a:hover {
 #eye {
     cursor: pointer;
     visibility: visible;
+    font-size: 4vh;
 }
 
 #eye2 {
     cursor: pointer;
     visibility: hidden;
+    font-size: 4vh;
+}
+
+.com {
+    color: crimson;
+    cursor: pointer;
 }
 
 .justify-content-center {
     text-align: center;
+    color: rgb(37, 35, 35);
+}
+
+.error {
+    color: maroon;
+}
+
+.saut {
+    margin-bottom: 3vh;
+}
+
+/* Info Press */
+
+.press1 {
+    background-size: cover;
+    height: 20vh;
+    margin: 5vh;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.press2 {
+    background-size: cover;
+    height: 20vh;
+    margin: 5vh;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#p1 {
+    display: none;
+    text-align: center;
+}
+
+#d1 {
+    display: block;
+    text-align: center;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+.item {
+    height: 300px;
+    width: 212px;
 }
 
 
@@ -305,3 +403,9 @@ a:hover {
         font-size: 3em;
     }
 } 
+
+@media (max-height: 720px) {
+    footer #mini.navbar{
+        bottom: auto;
+    }
+}

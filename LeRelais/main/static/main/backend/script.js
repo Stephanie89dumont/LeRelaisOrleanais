@@ -24,6 +24,10 @@ function myOpen(id) {
     }
 }
 
+function trigger() {
+    myOpen("contact")
+}
+
 function myClose(id) {
     var elem = document.getElementById(id);
     if (id == "bandeau1") {

@@ -1,4 +1,4 @@
-{% extends "main/base-mini.html" %}
+{% extends "main/base-user.html" %}
 {% block content %}
 <section class="page-section result">
     <div class="container">
@@ -36,6 +36,11 @@
                 </div>
                 <div class="col-lg-6">
                     <h3>{{ user.first_name }}</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <a class="btn btn-primary" href="{% url 'account:sign_out' %}" role="button">Se déconnecter</a>
                 </div>
             </div>
         </div>

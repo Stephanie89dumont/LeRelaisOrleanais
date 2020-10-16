@@ -97,7 +97,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 AUTH_USER_MODEL = 'account.Utilisateur'
 
-LOGIN_URL = 'account:sign_up'
+LOGIN_URL = 'account:connexion'
 
 if os.environ.get("PRODUCTION") is None:
     from .settings_dev import *
