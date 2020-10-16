@@ -11,17 +11,8 @@
 </div>
 </header>
 <main>
-    {% if user.administrateur %}
-    <p> administrer les comptes </p>
-    {% endif %}
-    {% if user.is_authenticated %}
-    <p> mon compte </p>
-    {% else%}
-    <p> s'inscrire </p>
-    <p> se connecter </p>
-    {% endif %}
     <div class="row justify-content-center">
-        <div class="col-4 bloc">
+        <div id='relais' class="col-4 bloc">
             <a href="{% url 'main:Pres' %}">
                 <table>
                     <tbody>
@@ -32,7 +23,7 @@
                 </table>
             </a>
         </div>
-        <div class="col-4 bloc">
+        <div id='vous' class="col-4 bloc">
             <a href="{% url 'main:Vous' %}">
                 <table>
                     <tbody>
@@ -45,7 +36,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-4 bloc">
+        <div id='agir' class="col-4 bloc">
             <a href="{% url 'main:Agir' %}">
                 <table>
                     <tbody>
@@ -56,7 +47,7 @@
                 </table>
             </a>
         </div>
-        <div class="col-4 bloc">
+        <div id='soutenir' class="col-4 bloc">
             <a href="{% url 'main:Soutenir' %}">
                 <table>
                     <tbody>

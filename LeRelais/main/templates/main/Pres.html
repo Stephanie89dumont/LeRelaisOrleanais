@@ -4,7 +4,7 @@
 {% block content %}
 <div class="row navbar justify-content-center">
     <a href="{% url 'main:index' %}" class="col-1 home"><i class="fas fa-home"></i></a>
-    <a id="home" href="{% url 'main:Pres' %}" class="col-2 onglet">Le Relais</a>
+    <a id="focus" href="{% url 'main:Pres' %}" class="col-2 onglet">Le Relais</a>
     <a href="{% url 'main:Vous' %}" class="col-2 onglet">Pour Vous</a>
     <a href="{% url 'main:Agir' %}" class="col-2 onglet">Agir avec Nous</a>
     <a href="{% url 'main:Soutenir' %}" class="col-2 onglet">Nous Soutenir</a>
@@ -13,110 +13,147 @@
 <main>
     <div class="row bloc1">
         <div class="col-8 article justify">
-            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div>Aenean ac semper magna. Vestibulum at tempor lorem. Sed velit ipsum, venenatis
-                venenatis augue
-                in, molestie sagittis dolor. Phasellus
-                vulputate ligula a mattis rutrum. Morbi nisl mi, congue non porttitor pharetra, condimentum at
-                velit. Curabitur porta ligula felis, sit amet mattis magna tempor a. Curabitur semper risus sit
-                amet metus tempor rhoncus. Nullam nec felis ipsum. Nullam eu elit ex. Vivamus eget lacus vitae
-                nulla blandit laoreet. Sed convallis tortor ut nibh sollicitudin elementum. Aliquam fermentum
-                arcu sed accumsan finibus. Aenean quam magna, varius at ultricies ac, efficitur ut sem. Nulla
-                magna quam, dapibus ac mattis ac, efficitur in purus
-                In vestibulum lacus vel ante laoreet, sed euismod ex vestibulum. Vestibulum imperdiet libero
-                eget nulla feugiat, eu efficitur nisi placerat. Sed eleifend cursus mollis. Nulla magna purus,
-                hendrerit ac mollis eget, cursus nec sapien. Mauris vulputate vel quam et viverra. Nunc lacus
-                mi, fringilla eu commodo nec, malesuada eu leo. Vestibulum ullamcorper consectetur volutpat.
-                Suspendisse potenti
-                Phasellus ac placerat massa, id porttitor lorem. Sed at magna orci. Ut volutpat orci quis
-                vestibulum ornare. Vestibulum augue sapien, semper eget sem ac, congue placerat justo.
-                Pellentesque quis justo diam. Nunc rhoncus hendrerit eros, blandit.
+            <div class="title">Présentation</div>
+            <div>
+                <p>Le Relais Orléanais est une association, régie par la loi 1901, créée en 1984.</p>
+
+                <p>Durant les premières années de son existence, l’association a concentré son énergie à offrir aux
+                    personnes en grande difficulté un repas chaud le midi dans le cadre d’une activité de restauration
+                    sociale.</p>
+                <p>L’objectif du Restaurant Social était et reste la possibilité d’offrir une restauration à tous ceux
+                    qui
+                    rencontrent des difficultés à se nourrir.</p>
             </div>
         </div>
         <div class="col-4 article">
             <div>
-                <img src="../../static/main/backend/photos/chat.png">
+                <img src="../../static/main/backend/photos/entreaide.jpeg">
+            </div>
+        </div>
+        <div class="col-12 article justify">
+            <div>
+                <p>L’alimentation est une préoccupation majeure de la vie des populations défavorisées. L’acte de manger
+                    va
+                    au-delà de la simple réponse au besoin de base qui se manifeste dans la sensation d’avoir faim.
+                    L’acte
+                    alimentaire est l’occasion d’échanges, de lien social et de convivialité, c’est un acte social par
+                    excellence.</p>
+
+                <p>C’est bien ce que le Relais Orléanais n’a cessé de développer depuis maintenant 35 ans.
+                    La restauration a été progressivement un marchepied à l’installation de nouveaux services dans la
+                    mesure
+                    où elle a rapidement révélé d’autres besoins.
+                    La particularité du fonctionnement du Relais Orléanais est de reposer sur une coopération de
+                    salariés et
+                    de bénévoles, en ce qui concerne le fonctionnement de l’accueil de jour qui intègre l’activité du
+                    restaurant social.</p>
             </div>
         </div>
     </div>
     <div class="row bloc2">
         <div class="col-4 article">
             <div>
-                <img src="../../static/main/backend/photos/chat.png">
+                <img src="../../static/main/backend/photos/mains.jpeg">
             </div>
         </div>
         <div class="col-8 article justify">
-            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div>Aenean ac semper magna. Vestibulum at tempor lorem. Sed velit ipsum, venenatis venenatis augue
-                in, molestie sagittis dolor. Phasellus
-                vulputate ligula a mattis rutrum. Morbi nisl mi, congue non porttitor pharetra, condimentum at
-                velit. Curabitur porta ligula felis, sit amet mattis magna tempor a. Curabitur semper risus sit
-                amet metus tempor rhoncus. Nullam nec felis ipsum. Nullam eu elit ex. Vivamus eget lacus vitae
-                nulla blandit laoreet. Sed convallis tortor ut nibh sollicitudin elementum. Aliquam fermentum
-                arcu sed accumsan finibus. Aenean quam magna, varius at ultricies ac, efficitur ut sem. Nulla
-                magna quam, dapibus ac mattis ac, efficitur in purus
-                In vestibulum lacus vel ante laoreet, sed euismod ex vestibulum. Vestibulum imperdiet libero
-                eget nulla feugiat, eu efficitur nisi placerat. Sed eleifend cursus mollis. Nulla magna purus,
-                hendrerit ac mollis eget, cursus nec sapien. Mauris vulputate vel quam et viverra. Nunc lacus
-                mi, fringilla eu commodo nec, malesuada eu leo. Vestibulum ullamcorper consectetur volutpat.
-                Suspendisse potenti
-                Phasellus ac placerat massa, id porttitor lorem. Sed at magna orci. Ut volutpat orci quis
-                vestibulum ornare. Vestibulum augue sapien, semper eget sem ac, congue placerat justo.
-                Pellentesque quis justo diam. Nunc rhoncus hendrerit eros, blandit.
+            <div class="title"></div>
+            <div>
+                <p>Cette coopération permet de combiner l’approche finalisée et institutionnelle des premiers et les
+                    apports des compétences professionnelles variées des seconds.</p>
+                Les délégations de services publics confiées à l’association sont à l’origine de la professionnalisation
+                de notre activité.</p>
+                <p>Il est soutenu la participation effective des personnes accueillies, répondant ainsi à leur demande
+                    légitime d’avoir une utilité sociale.</p>
+            </div>
+        </div>
+        <div class="col-12 article justify">
+            <div>
+                <p>Il s’agit, par cette «ambiance coopérative», de permettre aux personnes accueillies, qui souffrent
+                    aussi de précarité relationnelle, de raccrocher avec la société.</p>
+                <p>Mais s’il faut faire face collectivement aux nécessités de la survie de chacune de ces personnes, il
+                    importe aussi d’offrir la possibilité d’une nouvelle bifurcation dans sa vie, en tenant compte du
+                    fait qu’être en situation de précarité et sans résidence stable résulte, pour chacune, d’une rupture
+                    existentielle personnelle.</p>
+
+                <p>Lieu ouvert dans la ville, l’Accueil de Jour orléanais propose donc à des personnes en grande
+                    précarité un répit sans condition et des repas, qui pourront être une base pour une reprise
+                    d’existence.
+                    La mission des travailleurs sociaux n’a pas pour objet de soigner ni de combler des «manques», elle
+                    doit créer les conditions pour que le sujet, pris dans les filets et pièges d’une situation sans
+                    issue,
+                    puisse devenir acteur de sa propre vie en s’ouvrant à de nouveaux possibles.</p>
             </div>
         </div>
     </div>
     <div class="row bloc1">
         <div class="col-8 article justify">
-            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div>Aenean ac semper magna. Vestibulum at tempor lorem. Sed velit ipsum, venenatis venenatis augue
-                in, molestie sagittis dolor. Phasellus
-                vulputate ligula a mattis rutrum. Morbi nisl mi, congue non porttitor pharetra, condimentum at
-                velit. Curabitur porta ligula felis, sit amet mattis magna tempor a. Curabitur semper risus sit
-                amet metus tempor rhoncus. Nullam nec felis ipsum. Nullam eu elit ex. Vivamus eget lacus vitae
-                nulla blandit laoreet. Sed convallis tortor ut nibh sollicitudin elementum. Aliquam fermentum
-                arcu sed accumsan finibus. Aenean quam magna, varius at ultricies ac, efficitur ut sem. Nulla
-                magna quam, dapibus ac mattis ac, efficitur in purus
-                In vestibulum lacus vel ante laoreet, sed euismod ex vestibulum. Vestibulum imperdiet libero
-                eget nulla feugiat, eu efficitur nisi placerat. Sed eleifend cursus mollis. Nulla magna purus,
-                hendrerit ac mollis eget, cursus nec sapien. Mauris vulputate vel quam et viverra. Nunc lacus
-                mi, fringilla eu commodo nec, malesuada eu leo. Vestibulum ullamcorper consectetur volutpat.
-                Suspendisse potenti
-                Phasellus ac placerat massa, id porttitor lorem. Sed at magna orci. Ut volutpat orci quis
-                vestibulum ornare. Vestibulum augue sapien, semper eget sem ac, congue placerat justo.
-                Pellentesque quis justo diam. Nunc rhoncus hendrerit eros, blandit.
+            <div class="title">Historique</div>
+            <div>
+                <p><b>1984</b> : Démarrage du Relais Orléanais, à l’initiative d’associations, de la ville d’Orléans
+                    et de
+                    la DDASS.
+                    Son activité première : répondre aux besoins alimentaires des personnes en difficulté.
+                    Les repas sont fournis par le CCAS, les cantines scolaires et, par la suite, seront livrés par
+                    SODEXO ; les premiers bénévoles en assurent le service.
+                    C’est aujourd’hui encore la première mission du Relais.</p>
+                <p><b>1987</b> : Installation dans ses locaux actuels, Faubourg Madeleine, grâce à une souscription
+                    et des
+                    subventions (auparavant, il occupait les locaux des anciens abattoirs puis de l’usine Thermor).
+                </p>
+                <p><b>1988</b> : Intégration du premier salarié, travailleur social, dans l’association ;
+                    l’instauration
+                    du RMI obligeant de suivre les allocataires.</p>
+                <p><b>1994</b> : Evolution…les repas sont élaborés sur place avec les denrées de la Banque
+                    Alimentaire,
+                    nécessitant l’accroissement du nombre de bénévoles et le recrutement de nouveaux salariés.
+                    De nouveaux services apparaissent peu à peu : santé, vestiaire, bagagerie, domiciliation,…</p>
             </div>
         </div>
         <div class="col-4 article">
             <div>
-                <img src="../../static/main/backend/photos/chat.png">
+                <img src="../../static/main/backend/photos/Loiret.png">
             </div>
         </div>
     </div>
     <div class="row bloc2">
         <div class="col-4 article">
             <div>
-                <img src="../../static/main/backend/photos/chat.png">
+                <img src="../../static/main/backend/photos/soutien.jpeg">
             </div>
         </div>
         <div class="col-8 article justify">
-            <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div>Aenean ac semper magna. Vestibulum at tempor lorem. Sed velit ipsum, venenatis venenatis augue
-                in, molestie sagittis dolor. Phasellus
-                vulputate ligula a mattis rutrum. Morbi nisl mi, congue non porttitor pharetra, condimentum at
-                velit. Curabitur porta ligula felis, sit amet mattis magna tempor a. Curabitur semper risus sit
-                amet metus tempor rhoncus. Nullam nec felis ipsum. Nullam eu elit ex. Vivamus eget lacus vitae
-                nulla blandit laoreet. Sed convallis tortor ut nibh sollicitudin elementum. Aliquam fermentum
-                arcu sed accumsan finibus. Aenean quam magna, varius at ultricies ac, efficitur ut sem. Nulla
-                magna quam, dapibus ac mattis ac, efficitur in purus
-                In vestibulum lacus vel ante laoreet, sed euismod ex vestibulum. Vestibulum imperdiet libero
-                eget nulla feugiat, eu efficitur nisi placerat. Sed eleifend cursus mollis. Nulla magna purus,
-                hendrerit ac mollis eget, cursus nec sapien. Mauris vulputate vel quam et viverra. Nunc lacus
-                mi, fringilla eu commodo nec, malesuada eu leo. Vestibulum ullamcorper consectetur volutpat.
-                Suspendisse potenti
-                Phasellus ac placerat massa, id porttitor lorem. Sed at magna orci. Ut volutpat orci quis
-                vestibulum ornare. Vestibulum augue sapien, semper eget sem ac, congue placerat justo.
-                Pellentesque quis justo diam. Nunc rhoncus hendrerit eros, blandit.
+            <div class="title"></div>
+            <div>
+                <p><b>2005</b> : Installation de douches, à la demande de la ville d’Orléans, rue du Petit Chasseur,
+                    dans
+                    une
+                    antenne du Relais, point d’attache d’un chantier d’insertion et siège d’activités en ateliers.
+                </p>
+
+                <p><b>2010</b> : Création d’un accueil de nuit sans hébergement, à la demande de la DDCS durant la
+                    période
+                    hivernale, en complément de l’accueil 7/7 jours.</p>
+            </div>
+        </div>
+        <div class="col-12 article justify">
+            <div>
+                <p><b>2012</b> : Mise en place d’un nouveau lieu de restauration, rue des Murlins, dans les locaux
+                    du
+                    Secours
+                    Catholique, pour faire face à une fréquentation grandissante. C’est le dispositif « Point Déj »,
+                    destinéaux jeunes de 18 à 25 ans.
+                    Suite à l’arrivée de nombreux demandeurs d’asile, le Relais est désormais fréquenté par des
+                    familles
+                    avec enfants.</p>
+
+                <p><b>2020</b> : Le 17 février 2020, le permis de construire est accordé au Relais Orléanais pour la
+                    reconstruction de ses locaux. Un nouveau bâtiment de 850 m2, moderne et fonctionnel, devrait
+                    être
+                    opérationnel en 2021.</p>
+
+                <p>Les circonstances économiques actuelles ne laissent pas présager d’évolution favorable. Le Relais
+                    Orléanais continue, donc, de s’adapter pour répondre au mieux à la situation</p>
             </div>
         </div>
     </div>

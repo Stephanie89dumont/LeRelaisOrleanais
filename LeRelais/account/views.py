@@ -53,7 +53,7 @@ def sign_out(request):
 
 @login_required
 # dans la vue if request.user.admin else redirect
-def my_account(request):
+def profil(request):
     """Allow the user to view their account information."""
     user = Utilisateur.objects.get(id=request.user.id)
-    return render(request, "account/my_account.html", {"account": user})
+    return render(request, "account/Profil.html", {"account": user})

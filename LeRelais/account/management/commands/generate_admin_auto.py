@@ -5,11 +5,14 @@ import os
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        if Utilisateur.objects.count() == 0:
+        if Utilisateur.objects.count() < 10:
             # -----cette partie n'est pas à modifier
-            username = os.environ.get("USERNAME_ADMIN")
-            email = os.environ.get("EMAIL_ADMIN")
-            password = os.environ.get("PASSWORD_ADMIN")
+            username = 'admin'
+            email = 'admin@admin.com'
+            password = 'AZERTYUIOP'
+            #username = os.environ.get("USERNAME_ADMIN")
+            #email = os.environ.get("EMAIL_ADMIN")
+            #password = os.environ.get("PASSWORD_ADMIN")
             print('Création du compte admin {} / {}'.format(username, email))
             admin = Utilisateur.objects.create_user(email=email, username=username, password=password)
             # fin de la partie à ne pas modifier ci-dessous configurer vos champs personnalisés
